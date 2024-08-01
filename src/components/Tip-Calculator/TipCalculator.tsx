@@ -18,8 +18,14 @@ export default function TipCalculator() {
           <h5 className="card-title text-center">Tip Calculator</h5>
           <div className="text-center">
             <Input bill={bill} onSetBill={setBill} />
-            <Select />
-            <Select />
+            <Select
+                percentage={percentage1}
+                onSelect={setPercentage1}
+                label={'How did you like a service?'}/>
+            <Select
+                percentage={percentage2}
+                onSelect={setPercentage2}
+                label={'How did your friend like a service?'}/>
             <Output />
             <Reset />
           </div>
