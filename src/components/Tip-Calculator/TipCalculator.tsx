@@ -26,7 +26,7 @@ export default function TipCalculator() {
                 percentage={percentage2}
                 onSelect={setPercentage2}
                 label={'How did your friend like a service?'}/>
-            <Output />
+            <Output bill={bill} tip={tip} />
             <Reset />
           </div>
         </div>
