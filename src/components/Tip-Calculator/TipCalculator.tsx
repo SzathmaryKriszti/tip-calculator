@@ -11,6 +11,12 @@ export default function TipCalculator() {
 
   const tip = bill * ((percentage1 + percentage2) /2 / 100);
 
+  function handleReset() {
+    setBill(0);
+    setPercentage1(0);
+    setPercentage2(0);
+  }
+
   return (
     <div>
       <div className="card" style={{ width: '18rem' }}>
@@ -27,7 +33,7 @@ export default function TipCalculator() {
                 onSelect={setPercentage2}
                 label={'How did your friend like a service?'}/>
             <Output bill={bill} tip={tip} />
-            <Reset />
+            <Reset onReset={handleReset} />
           </div>
         </div>
       </div>
