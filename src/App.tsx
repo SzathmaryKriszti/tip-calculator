@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
     return (
-        <section className={'container-md mt-5'}>
-                <div className={'col-3'}>
-                    <TipCalculator/>
-                </div>
-        </section>
+        <div className={'d-flex align-items-center justify-content-center mt-5'}>
+            <section className={'mt-5'}>
+                <TipCalculator/>
+            </section>
+        </div>
     );
 }
 
